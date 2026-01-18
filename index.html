@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Introducción a los lenguajes del desarrollo web: HTML, CSS y JavaScript.">
+  <title>Inicio | Lenguajes del Desarrollo Web</title>
+
+  <!-- Bootstrap CSS local -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <a class="visually-hidden-focusable" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="border-bottom bg-body">
+    <nav class="navbar navbar-expand-lg bg-primary-subtle" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <span class="fw-semibold text-primary-emphasis">Tecnologías Web</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+          aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <div class="d-flex flex-column flex-lg-row w-100 align-items-lg-center gap-3">
+            <div class="d-flex flex-wrap gap-2 me-lg-auto" role="navigation" aria-label="Secciones">
+              <a class="btn btn-sm rounded-pill px-3 py-2 fw-semibold shadow-sm bg-white text-primary-emphasis border border-primary-subtle"
+                 aria-current="page" href="index.html">Inicio</a>
+              <a class="btn btn-sm rounded-pill px-3 py-2 bg-white bg-opacity-50 text-primary-emphasis border border-primary-subtle"
+                 href="html.html">HTML</a>
+              <a class="btn btn-sm rounded-pill px-3 py-2 bg-white bg-opacity-50 text-primary-emphasis border border-primary-subtle"
+                 href="css.html">CSS</a>
+              <a class="btn btn-sm rounded-pill px-3 py-2 bg-white bg-opacity-50 text-primary-emphasis border border-primary-subtle"
+                 href="javascript.html">JavaScript</a>
+              <a class="btn btn-sm rounded-pill px-3 py-2 bg-white bg-opacity-50 text-primary-emphasis border border-primary-subtle"
+                 href="recursos.html">Recursos y contacto</a>
+            </div>
+
+            <button id="themeToggle"
+              class="btn btn-sm rounded-pill px-3 py-2 bg-white bg-opacity-50 text-body border border-secondary-subtle"
+              type="button" aria-pressed="false">
+              Modo claro
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-7">
+            <h1 class="display-6 fw-bold">Introducción a los lenguajes del desarrollo web</h1>
+            <p class="lead mb-4">
+              Sitio informativo (UTPL) sobre los tres pilares del desarrollo web:
+              <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-light border border-primary-subtle text-primary-emphasis fw-semibold" href="html.html">
+                Empezar con HTML
+              </a>
+              <a class="btn btn-outline-primary" href="css.html">Ver CSS</a>
+              <a class="btn btn-outline-primary" href="javascript.html">Ver JavaScript</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-5">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="h5">¿Qué aprenderás aquí?</h2>
+                <ul class="mb-0">
+                  <li>Qué hace cada lenguaje en un sitio moderno.</li>
+                  <li>Breve historia y evolución.</li>
+                  <li>Comparativas resumidas en tablas.</li>
+                  <li>Recursos recomendados y formulario de contacto.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-5">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-12 col-lg-6">
+            <div class="card shadow-sm h-100">
+              <div class="ratio ratio-16x9">
+                <img src="img/desarrollo_web.jpg"
+                     class="img-fluid rounded-top w-100 h-100 object-fit-cover"
+                     alt=""
+                     loading="lazy">
+              </div>
+              <div class="card-body">
+                <p class="mb-0 text-body-secondary">
+                  Panorama general del desarrollo web: estructura, diseño e interactividad.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="card shadow-sm h-100">
+              <div class="ratio ratio-16x9">
+                <img src="img/diseno_web1.png"
+                     class="img-fluid rounded-top w-100 h-100 object-fit-cover"
+                     alt=""
+                     loading="lazy">
+              </div>
+              <div class="card-body">
+                <p class="mb-0 text-body-secondary">
+                  El diseño web combina estética y usabilidad para crear experiencias accesibles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-5">
+      <div class="container">
+        <div id="slider" class="carousel slide" data-bs-ride="carousel" aria-label="Carrusel informativo">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="0"
+              class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner rounded-3 border">
+            <div class="carousel-item active">
+              <div class="p-5 bg-primary-subtle">
+                <h2 class="h4">HTML: estructura</h2>
+                <p class="mb-0">Define el contenido y la semántica.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="p-5 bg-success-subtle">
+                <h2 class="h4">CSS: presentación</h2>
+                <p class="mb-0">Controla la apariencia visual y el diseño responsivo.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="p-5 bg-warning-subtle">
+                <h2 class="h4">JavaScript: interactividad</h2>
+                <p class="mb-0">Agrega lógica, eventos y manipulación del DOM.</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev" aria-label="Anterior">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next" aria-label="Siguiente">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-top py-4">
+    <div class="container">
+      <p class="mb-1">Sitio creado como Aprendizaje Práctico del segundo bimestre de Tecnologías Web.</p>
+      <p class="mb-1">Alumno: Guillermo Jijón C</p>
+      <p class="mb-0">
+        Tecnologías Web -
+        <a href="https://www.utpl.edu.ec/" target="_blank" rel="noopener noreferrer">UTPL</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS local -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>
