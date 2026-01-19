@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CSS: historia, usos, y características modernas para diseño responsive.">
+  <title>CSS | Lenguajes del Desarrollo Web</title>
+
+  <!-- Bootstrap CSS local -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<a class="visually-hidden-focusable" href="#contenido">Saltar al contenido principal</a>
+
+<header class="border-bottom bg-body">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="fw-semibold">Tecnologías Web</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+        aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <div class="d-flex flex-column flex-lg-row w-100 align-items-lg-center gap-3">
+          <div class="d-flex flex-wrap gap-2 me-lg-auto">
+            <a class="btn btn-outline-primary btn-sm rounded-pill px-3 py-2" href="index.html">Inicio</a>
+            <a class="btn btn-outline-primary btn-sm rounded-pill px-3 py-2" href="html.html">HTML</a>
+            <a class="btn btn-primary btn-sm rounded-pill px-3 py-2" aria-current="page" href="css.html">CSS</a>
+            <a class="btn btn-outline-primary btn-sm rounded-pill px-3 py-2" href="javascript.html">JavaScript</a>
+            <a class="btn btn-outline-primary btn-sm rounded-pill px-3 py-2" href="recursos.html">Recursos y contacto</a>
+          </div>
+
+          <button id="themeToggle"
+            class="btn btn-outline-secondary btn-sm rounded-pill px-3 py-2"
+            type="button" aria-pressed="false">
+            Modo claro
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="contenido" class="py-4">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-12">
+        <div class="p-4 p-lg-5 bg-primary-subtle rounded-3 border">
+          <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+            <span class="badge bg-primary-subtle text-primary-emphasis border border-primary-subtle">Diseño</span>
+            <span class="badge text-bg-light border">Responsive</span>
+            <span class="badge text-bg-light border">Layout</span>
+          </div>
+          <h1 class="mb-2">CSS</h1>
+          <p class="lead mb-0">
+            Hojas de estilo en cascada para controlar la presentación visual de un documento web.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-8">
+        <section class="card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex flex-column flex-md-row gap-3 align-items-md-start">
+              <div class="flex-grow-1">
+                <h2 class="h4 mb-1">Introducción</h2>
+                <p class="text-body-secondary mb-3">
+                  Lenguaje de estilos: apariencia, layout y diseño responsivo.
+                </p>
+
+                <p>
+                  El CSS (Cascading Style Sheets) es el lenguaje utilizado para definir la apariencia visual
+                  de los elementos HTML. Fue propuesto por Håkon Wium Lie en 1994 y estandarizado por el W3C
+                  en 1996 como CSS1.
+                </p>
+                <p>
+                  Posteriormente, CSS2 añadió posicionamiento avanzado, y CSS3 se organizó en módulos
+                  independientes que incorporan Flexbox, Grid Layout, animaciones y transiciones.
+                </p>
+                <p class="mb-0">
+                  CSS es fundamental para construir interfaces modernas, accesibles y responsivas.
+                </p>
+              </div>
+
+              <div class="ratio ratio-1x1 flex-shrink-0" style="max-width:220px;">
+                <img class="img-fluid rounded w-100 h-100 object-fit-contain"
+                     src="img/css.png" alt="Logo de CSS" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <section class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h2 class="h5">Usos principales</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Diseño visual de páginas web</li>
+              <li class="list-group-item">Layouts modernos (Flexbox / Grid)</li>
+              <li class="list-group-item">Adaptación responsiva</li>
+              <li class="list-group-item">Animaciones y transiciones</li>
+              <li class="list-group-item">Sistemas de diseño</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-12 col-lg-7">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="h4">Tabla comparativa: evolución y características</h2>
+            <div class="table-responsive">
+              <table class="table table-striped align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col">Versión</th>
+                    <th scope="col">Innovación</th>
+                    <th scope="col">Aplicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CSS1</td>
+                    <td>Tipografías y colores</td>
+                    <td>Estilos básicos</td>
+                  </tr>
+                  <tr>
+                    <td>CSS2</td>
+                    <td>Positioning y z-index</td>
+                    <td>Layouts complejos</td>
+                  </tr>
+                  <tr>
+                    <td>CSS3</td>
+                    <td>Flexbox, Grid, animaciones</td>
+                    <td>Diseño moderno</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-warning" href="javascript.html">Continuar con JavaScript</a>
+          <a class="btn btn-outline-primary" href="index.html">Volver al inicio</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="border-top py-4">
+  <div class="container small text-body-secondary">
+    <p class="mb-1">Sitio creado como Aprendizaje Práctico del segundo bimestre de Tecnologías Web.</p>
+    <p class="mb-1">Alumno: Guillermo Jijón C</p>
+    <p class="mb-0">
+      Tecnologías Web -
+      <a href="https://www.utpl.edu.ec/" target="_blank" rel="noopener noreferrer">UTPL</a>
+    </p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS local -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+</html>
